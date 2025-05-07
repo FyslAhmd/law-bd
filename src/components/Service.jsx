@@ -11,7 +11,7 @@ const Service = () => {
       <h1 className="text-3xl text-center font-bold">
         We Provide Best Law Services
       </h1>
-      <p className="text-gray-600 font-medium text-center">
+      <p className="text-gray-600 font-medium text-center my-5">
         Our platform connects you with verified, experienced Lawyers across
         various specialities — all at your convenience.{" "}
       </p>
@@ -20,7 +20,7 @@ const Service = () => {
           <div className="flex flex-col items-center gap-2 bg-gray-200 p-4 rounded-xl">
             <img src={img1} alt="" />
             <h1 className="text-2xl font-bold">
-              <CountUp start={1} end={199} duration={5} />+
+              <CountUp start={1} end={199} duration={5} enableScrollSpy />+
             </h1>
             <p className="text-gray-600">Total Lawyer</p>
           </div>
@@ -29,7 +29,7 @@ const Service = () => {
           <div className="flex flex-col items-center gap-2 bg-gray-200 p-4 rounded-xl">
             <img src={img2} alt="" />
             <h1 className="text-2xl font-bold">
-              <CountUp start={1} end={667} duration={5} />+
+              <CountUp start={1} end={667} duration={5} enableScrollSpy />+
             </h1>
             <p className="text-gray-600">Total Reviews</p>
           </div>
@@ -38,7 +38,7 @@ const Service = () => {
           <div className="flex flex-col items-center gap-2 bg-gray-200 p-4 rounded-xl">
             <img src={img3} alt="" />
             <h1 className="text-2xl font-bold">
-              <CountUp start={1} end={1900} duration={5} />+
+              <CountUp start={1} end={1900} duration={5} enableScrollSpy />+
             </h1>
             <p className="text-gray-600">Cases Initiated</p>
           </div>
@@ -47,7 +47,7 @@ const Service = () => {
           <div className="flex flex-col items-center gap-2 bg-gray-200 p-4 rounded-xl">
             <img src={img4} alt="" />
             <h1 className="text-2xl font-bold">
-              <CountUp start={1} end={300} duration={5} />+
+              <CountUp start={1} end={300} duration={5} enableScrollSpy />+
             </h1>
             <p className="text-gray-600">Total Stuffs</p>
           </div>

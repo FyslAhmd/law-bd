@@ -55,21 +55,23 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to="/">
-          <a className="text-xl md:text-2xl font-bold flex items-center gap-2">
-            <img src={navLogo} alt="" className="w-8" />
-            Law.BD
-          </a>
+        <Link
+          to="/"
+          className="text-xl md:text-2xl font-bold flex items-center gap-2"
+        >
+          <img src={navLogo} alt="" className="w-8" />
+          Law.BD
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/contact">
-          <a className="btn text-white text-base rounded-full border-none bg-green-600 hover:bg-green-500">
-            Contact Now
-          </a>
+        <Link
+          to="/contact"
+          className="btn text-white text-base rounded-full border-none bg-green-600 hover:bg-green-500"
+        >
+          Contact Now
         </Link>
       </div>
     </div>
