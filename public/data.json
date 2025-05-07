@@ -1,0 +1,111 @@
+[
+    {
+      "image": "https://i.ibb.co.com/nMKtWY47/law1.jpg",
+      "name": "Advocate Rahim Uddin",
+      "experience": "8",
+      "licenseNo": "BD 1001982",
+      "speciality": "Criminal Expert",
+      "fee": 5000,
+      "available": ["Sunday", "Tuesday", "Thursday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/Rp8KGhf2/law6.jpg",
+      "name": "Barrister Tanvir Hasan",
+      "experience": "10",
+      "licenseNo": "BD 1123847",
+      "speciality": "Corporate Law",
+      "fee": 7000,
+      "available": ["Monday", "Wednesday", "Saturday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/Ps8YjNpS/law2.jpg",
+      "name": "Advocate Nabila Chowdhury",
+      "experience": "6",
+      "licenseNo": "BD 1209843",
+      "speciality": "Family Law",
+      "fee": 4500,
+      "available": ["Sunday", "Tuesday", "Friday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/wrC9KbYL/law7.jpg",
+      "name": "Barrister Imran Siddiqui",
+      "experience": "12",
+      "licenseNo": "BD 1357823",
+      "speciality": "Intellectual Property",
+      "fee": 8500,
+      "available": ["Monday", "Wednesday", "Friday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/v6jMdsYx/law3.jpg",
+      "name": "Advocate Arifa Haque",
+      "experience": "7",
+      "licenseNo": "BD 1463902",
+      "speciality": "Civil Litigation",
+      "fee": 6000,
+      "available": ["Tuesday", "Thursday", "Saturday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/TxPD5Q1k/law8.jpg",
+      "name": "Advocate Shafiq Rahman",
+      "experience": "9",
+      "licenseNo": "BD 1537283",
+      "speciality": "Immigration Law",
+      "fee": 7200,
+      "available": ["Sunday", "Monday", "Wednesday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/F4x9rVf1/law9.jpg",
+      "name": "Barrister Mehnaz Karim",
+      "experience": "11",
+      "licenseNo": "BD 1603981",
+      "speciality": "Constitutional Law",
+      "fee": 8000,
+      "available": ["Monday", "Thursday", "Saturday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/20mpYnW7/law10.jpg",
+      "name": "Advocate Faridul Alam",
+      "experience": "5",
+      "licenseNo": "BD 1734829",
+      "speciality": "Real Estate Law",
+      "fee": 4800,
+      "available": ["Tuesday", "Wednesday", "Friday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/6cPYr4Gc/law4.jpg",
+      "name": "Barrister Tahmina Sultana",
+      "experience": "13",
+      "licenseNo": "BD 1823761",
+      "speciality": "Environmental Law",
+      "fee": 9000,
+      "available": ["Sunday", "Tuesday", "Friday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/3Y852SkZ/law11.jpg",
+      "name": "Advocate Mahbub Hossain",
+      "experience": "4",
+      "licenseNo": "BD 1928374",
+      "speciality": "Labor Law",
+      "fee": 4300,
+      "available": ["Monday", "Wednesday", "Saturday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/qY4xY3Xs/law5.jpg",
+      "name": "Barrister Laila Nahar",
+      "experience": "6",
+      "licenseNo": "BD 2057381",
+      "speciality": "Banking & Finance",
+      "fee": 5600,
+      "available": ["Tuesday", "Thursday", "Sunday"]
+    },
+    {
+      "image": "https://i.ibb.co.com/B26cmXMx/law12.jpg",
+      "name": "Advocate Nazmul Kabir",
+      "experience": "9",
+      "licenseNo": "BD 2173842",
+      "speciality": "Taxation Law",
+      "fee": 7500,
+      "available": ["Monday", "Thursday", "Saturday"]
+    }
+  ]
+  
