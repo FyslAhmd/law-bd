@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../root/Root";
 import Home from "../pages/Home";
+import LawyerDetails from "../pages/LawyerDetails";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,15 @@ export const router = createBrowserRouter([
         hydrateFallbackElement: (
           <h1 className="text-2xl text-center font-bold mt-20">Loading...</h1>
         ),
+      },
+      {
+        path:'/details/:id',
+        Component: LawyerDetails,
+        loader: () => fetch("/data.json"),
+        hydrateFallbackElement: (
+          <h1 className="text-2xl text-center font-bold mt-20">Loading...</h1>
+        ),
+
       },
       {
         path: "/bookings",
