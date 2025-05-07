@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRegistered } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import { Link, useLoaderData, useParams } from "react-router";
+import { addToAppointmentList } from "../utilities/localStorage";
 
 const LawyerDetails = () => {
   const { id } = useParams();
@@ -10,6 +11,10 @@ const LawyerDetails = () => {
 
   const { image, name, experience, licenseNo, speciality, fee, available } =
     lawyer;
+
+  const handleBooking = () => {
+    addToAppointmentList(lawyer.id);
+  };
 
   return (
     <div className="my-10">
@@ -74,6 +79,7 @@ const LawyerDetails = () => {
             for today only. We appreciate your understanding and cooperation.
           </p>
           <Link
+            onClick={handleBooking}
             to="/bookings"
             className="btn text-white text-base w-full rounded-full border-none bg-green-600 hover:bg-green-500"
           >
