@@ -12,12 +12,12 @@ const Hero = () => {
       <div className="hero-overlay rounded-xl"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-4/6 my-25">
-          <h1 className="mb-5 text-3xl font-bold">
+          <h1 className="mb-5 text-xl md:text-3xl font-bold">
             It avoids subjective claims or exaggeration that might raise red
             flags legally
           </h1>
-          <p className="mb-5">
-            Our platform connects you with verified, experienced doctors across
+          <p className="text-xs md:text-base mb-5">
+            Our platform connects you with verified, experienced lawyers across
             various specialties — all at your convenience. Whether it's a
             routine checkup or urgent consultation, book appointments in minutes
             and receive quality care you can trust.

@@ -1,56 +1,3 @@
-// import React, { useState } from "react";
-// import {
-//   getAppointmentList,
-//   removeFromAppointmentList,
-// } from "../utilities/localStorage";
-// import BookingCard from "../components/BookingCard";
-// import { Link, useLoaderData } from "react-router";
-// import { toast } from "react-toastify";
-
-// const Bookings = () => {
-//   const [bookingData, setBookingData] = useState([]);
-//   const localStorageData = getAppointmentList();
-//   const jsonData = useLoaderData();
-//   useState(() => {
-//     setBookingData(localStorageData);
-//   }, []);
-
-//   const handleCancelAppointment = (id) => {
-//     removeFromAppointmentList(id);
-//     setBookingData(getAppointmentList());
-//     toast.error("Appointment Cancelled");
-//   };
-//   return (
-//     <div className="my-20">
-//       <h1 className="text-3xl text-center font-bold">My Today Appointments</h1>
-//       <p className="text-gray-600 font-medium text-center my-5">
-//         Our platform connects you with verified, experienced Lawyers across
-//         various specialties — all at your convenience.{" "}
-//       </p>
-//       <div>
-//         {bookingData.map((dataId) => (
-//           <BookingCard
-//             key={dataId}
-//             jsonData={jsonData}
-//             data={dataId}
-//             cancelAppointment={handleCancelAppointment}
-//           ></BookingCard>
-//         ))}
-//       </div>
-//       {bookingData.length === 0 && (
-//         <div className="text-center space-y-4 p-8 border border-gray-300 rounded-xl my-10 w-fit mx-auto">
-//           <h1 className="text-2xl font-bold">No Appointment Yet</h1>
-//           <Link to="/" className="btn btn-outline btn-primary">
-//             Book an Appointment
-//           </Link>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Bookings;
-
 import React, { useState, useEffect } from "react";
 import {
   getAppointmentList,
@@ -113,13 +60,6 @@ const Bookings = () => {
 
   return (
     <div className="my-20">
-      <h1 className="text-3xl text-center font-bold">My Today Appointments</h1>
-      <p className="text-gray-600 font-medium text-center my-5">
-        Our platform connects you with verified, experienced Lawyers across
-        various specialties — all at your convenience.
-      </p>
-
-      {/* Chart */}
       {chartData.length > 0 && (
         <div className="my-10">
           <h2 className="text-2xl font-semibold text-center mb-6">
@@ -146,6 +86,16 @@ const Bookings = () => {
         </div>
       )}
 
+      <h1 className="text-3xl text-center font-bold">
+        {bookingData.length === 0
+          ? "No Appointment Yet"
+          : "My Today Appointments"}
+      </h1>
+      <p className="text-gray-600 font-medium text-center my-5">
+        Our platform connects you with verified, experienced Lawyers across
+        various specialties — all at your convenience.
+      </p>
+
       {/* Appointment Cards */}
       <div>
         {bookingData.map((dataId) => (
@@ -160,8 +110,7 @@ const Bookings = () => {
 
       {/* No Appointments */}
       {bookingData.length === 0 && (
-        <div className="text-center space-y-4 p-8 border border-gray-300 rounded-xl my-10 w-fit mx-auto">
-          <h1 className="text-2xl font-bold">No Appointment Yet</h1>
+        <div className="text-center">
           <Link to="/" className="btn btn-outline btn-primary">
             Book an Appointment
           </Link>

@@ -42,18 +42,18 @@ const LawyerDetails = () => {
 
   return (
     <div className="my-10">
-      <div className="bg-gray-100 p-12 rounded-xl">
-        <h1 className="text-3xl text-center font-bold">
+      <div className="bg-gray-100 p-6 md:p-12 rounded-xl">
+        <h1 className="text-xl md:text-3xl text-center font-bold">
           Lawyer’s Profile Details
         </h1>
-        <p className="text-gray-600 font-medium text-center my-5">
+        <p className="text-gray-600 font-medium text-center my-5 text-xs md:text-base">
           Get to know your legal expert closely — from qualifications to
           experience and specialization. Trust builds with transparency, and
           here you’ll find all the essential details about your chosen lawyer.{" "}
         </p>
       </div>
 
-      <div className="flex gap-10 items-center p-6 my-5 border rounded-xl border-gray-300">
+      <div className="flex flex-col md:flex-row gap-10 items-center p-6 my-5 border rounded-xl border-gray-300">
         <div>
           <img src={image} className="w-40 rounded-xl" alt="" />
         </div>
@@ -70,15 +70,17 @@ const LawyerDetails = () => {
             </p>
           </div>
           <div className="text-gray-600 font-medium">
-            Availability :{" "}
-            {available.map((day, index) => (
-              <span
-                key={index}
-                className="text-yellow-600 bg-yellow-100 font-normal text-center rounded-2xl px-2 py-1 mx-2"
-              >
-                {day}
-              </span>
-            ))}
+            Availability :
+            <div className="flex flex-col md:flex-row gap-2">
+              {available.map((day, index) => (
+                <span
+                  key={index}
+                  className="text-yellow-600 bg-yellow-100 font-normal text-center rounded-2xl px-2 py-1 mx-2"
+                >
+                  {day}
+                </span>
+              ))}
+            </div>
           </div>
           <p className="text-gray-600 font-medium">
             Consultation Fee:{" "}
