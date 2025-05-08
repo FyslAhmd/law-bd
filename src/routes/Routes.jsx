@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import LawyerDetails from "../pages/LawyerDetails";
 import Bookings from "../pages/Bookings";
 import ErrorPage from "../components/Error404/ErrorPage";
+import Blogs from "../pages/Blogs";
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
         hydrateFallbackElement: (
           <h1 className="text-2xl text-center font-bold mt-20">Loading...</h1>
         ),
-        errorElement: <h1>this is error</h1>
+        errorElement: <h1>this is error</h1>,
       },
       {
         path: "/bookings",
@@ -38,7 +39,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/blogs",
-        element: <h1>this is blogs</h1>,
+        Component: Blogs,
+        loader: () => fetch("/question.json"),
+        hydrateFallbackElement: (
+          <h1 className="text-2xl text-center font-bold mt-20">Loading...</h1>
+        ),
       },
     ],
   },
