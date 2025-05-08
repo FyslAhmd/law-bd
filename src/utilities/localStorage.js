@@ -9,10 +9,11 @@ const getAppointmentList = () => {
 const addToAppointmentList = (id) => {
   const appointmentList = getAppointmentList();
   if (appointmentList.includes(id)) {
-    console.log("id already in bd");
+    return 0;
   } else {
     appointmentList.push(id);
     localStorage.setItem("appointment", JSON.stringify(appointmentList));
+    return 1;
   }
 };
 

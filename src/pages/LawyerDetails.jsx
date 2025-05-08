@@ -1,19 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRegistered } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
-import { Link, useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
 import { addToAppointmentList } from "../utilities/localStorage";
+import { toast } from "react-toastify";
 
 const LawyerDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
   const lawyer = data.find((item) => item.id === parseInt(id));
+  const navigate = useNavigate();
 
   const { image, name, experience, licenseNo, speciality, fee, available } =
     lawyer;
 
   const handleBooking = () => {
-    addToAppointmentList(lawyer.id);
+    const databaseRes = addToAppointmentList(lawyer.id);
+    if (databaseRes) {
+      toast.success(`Appointment booked with ${name}`);
+      navigate('/bookings');
+    } else {
+      toast.error(`Already Appointment booked`);
+    }
   };
 
   return (
@@ -78,13 +86,12 @@ const LawyerDetails = () => {
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.
           </p>
-          <Link
+          <button
             onClick={handleBooking}
-            to="/bookings"
             className="btn text-white text-base w-full rounded-full border-none bg-green-600 hover:bg-green-500"
           >
             Book Appointment Now
-          </Link>
+          </button>
         </div>
       </div>
     </div>
