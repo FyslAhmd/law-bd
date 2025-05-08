@@ -1,15 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRegistered } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
-import { useLoaderData, useNavigate, useParams } from "react-router";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router";
 import { addToAppointmentList } from "../utilities/localStorage";
 import { toast } from "react-toastify";
 
 const LawyerDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
-  const lawyer = data.find((item) => item.id === parseInt(id));
+  const lawyer = data.find((item) => item.id.toString() === id);
   const navigate = useNavigate();
+
+  if (!lawyer) {
+    return (
+      <div className="text-center bg-gray-100 my-20 space-y-4 border border-gray-300 p-10 rounded-xl">
+        <h1 className="text-3xl font-bold text-red-600">
+          404 - Lawyer Not Found
+        </h1>
+        <p className="text-gray-600">
+          The lawyer you are looking for does not exist or the ID is incorrect.
+        </p>
+        <Link to="/" className="btn btn-outline btn-primary">
+          Go Back Home
+        </Link>
+      </div>
+    );
+  }
 
   const { image, name, experience, licenseNo, speciality, fee, available } =
     lawyer;
@@ -18,7 +34,7 @@ const LawyerDetails = () => {
     const databaseRes = addToAppointmentList(lawyer.id);
     if (databaseRes) {
       toast.success(`Appointment booked with ${name}`);
-      navigate('/bookings');
+      navigate("/bookings");
     } else {
       toast.error(`Already Appointment booked`);
     }
