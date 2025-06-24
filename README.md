@@ -1,12 +1,63 @@
-# React + Vite
+# ⚖️ Law BD – Lawyer Booking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[🌐 Live Site](https://find-lawyers-bd.netlify.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## Expanding the ESLint configuration
+**Law BD** is a frontend-only lawyer appointment platform that allows users to view lawyer profiles, book and cancel appointments, and read legal blogs. The application uses **React** and **Tailwind CSS** for responsive UI, **Firebase** for authentication, and **React Recharts** to display booking-related statistics. All dynamic content is powered by **mock JSON data** for simulation purposes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Key Features
+
+- 🔐 **Authentication**
+  - Firebase Google Sign-in
+- 👨‍⚖️ **Lawyer Listings**
+  - View all available lawyers with specialization and details
+- 📅 **Booking System**
+  - Users can book and cancel appointments (JSON-based logic)
+- 📊 **Statistics Dashboard**
+  - View booking and lawyer statistics using Recharts
+- 📚 **Blog Section**
+  - Legal tips and insights
+- 💬 **User Feedback**
+  - Toast notifications for user actions
+- 📱 **Responsive UI**
+  - Optimized for mobile and desktop
+
+---
+
+## 🧰 Technologies Used
+
+- React.js
+- Tailwind CSS
+- Firebase Authentication
+- React Router DOM
+- React Icons & FontAwesome
+- React Toastify
+- React Recharts
+- JSON-based mock data
+
+---
+
+## 📦 Project Dependencies
+
+```json
+{
+  "@fortawesome/fontawesome-svg-core": "^6.7.2",
+  "@fortawesome/free-brands-svg-icons": "^6.7.2",
+  "@fortawesome/free-regular-svg-icons": "^6.7.2",
+  "@fortawesome/free-solid-svg-icons": "^6.7.2",
+  "@fortawesome/react-fontawesome": "^0.2.2",
+  "@tailwindcss/vite": "^4.1.5",
+  "react": "^19.1.0",
+  "react-countup": "^6.5.3",
+  "react-dom": "^19.1.0",
+  "react-icons": "^5.5.0",
+  "react-router": "^7.5.3",
+  "react-toastify": "^11.0.5",
+  "recharts": "^2.15.3",
+  "tailwindcss": "^4.1.5"
+}
