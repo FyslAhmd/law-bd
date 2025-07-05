@@ -6,14 +6,12 @@
 
 ## 📌 Project Overview
 
-**Law BD** is a frontend-only lawyer appointment platform that allows users to view lawyer profiles, book and cancel appointments, and read legal blogs. The application uses **React** and **Tailwind CSS** for responsive UI, **Firebase** for authentication, and **React Recharts** to display booking-related statistics. All dynamic content is powered by **mock JSON data** for simulation purposes.
+**Law BD** is a frontend-only lawyer appointment platform that allows users to view lawyer profiles, book and cancel appointments, and read legal blogs. The application uses **React** and **Tailwind CSS** for responsive UI, and **React Recharts** to display booking-related statistics. All dynamic content is powered by **mock JSON data** for simulation purposes.
 
 ---
 
 ## 🚀 Key Features
 
-- 🔐 **Authentication**
-  - Firebase Google Sign-in
 - 👨‍⚖️ **Lawyer Listings**
   - View all available lawyers with specialization and details
 - 📅 **Booking System**
@@ -33,7 +31,6 @@
 
 - React.js
 - Tailwind CSS
-- Firebase Authentication
 - React Router DOM
 - React Icons & FontAwesome
 - React Toastify
